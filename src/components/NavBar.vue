@@ -13,7 +13,7 @@
           <router-link to="/experience">Experience / Projects</router-link>
         </li>
         <li @click="hideMenu">
-          <router-link to="/education">Education</router-link>
+          <router-link to="/history">History</router-link>
         </li>
         <li @click="hideMenu">
           <router-link to="/contact">Contact / Resume</router-link>

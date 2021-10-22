@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@vue/composition-api": "^1.2.4",
-    "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",

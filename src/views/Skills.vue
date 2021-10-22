@@ -84,5 +84,8 @@ ul > li {
   .skill {
     width: 100%;
   }
+  ul {
+    padding: 0vh;
+  }
 }
 </style>
