@@ -48,9 +48,8 @@ export default defineComponent({
   grid-template-rows: auto 1fr auto;
 }
 .content {
-  margin: 5vh 0vh;
+  margin: 3vh 3vh;
 }
-
 body {
   background-color: #3a393e;
 }
@@ -63,6 +62,16 @@ h2 {
 h3 {
   color: #ffde80;
 }
+@media only screen and (max-width: 600px) {
+  /* PHONES */
+  #app {
+    margin: 2vh 1vh;
+  }
+  .content {
+    margin: 5vh 0vh;
+  }
+}
+
 /* Pulse effect of the different cards */
 .pulse {
   -webkit-animation-name: pulse;

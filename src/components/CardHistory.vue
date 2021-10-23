@@ -1,7 +1,10 @@
 <template>
   <div
     class="history"
-    v-bind:class="[history.isHovering ? 'pulse' : '']"
+    v-bind:class="[
+      history.isHovering ? 'pulse' : '',
+      history.isSchool ? 'school' : 'work',
+    ]"
     @mouseover="mouseOver(history)"
     @mouseout="mouseLeave(history)"
   >
@@ -14,6 +17,7 @@
       <div class="diplomaOrPosition">
         {{ history.diploma }}{{ history.position }}
       </div>
+      <div class="detail">{{ history.detail }}</div>
     </div>
   </div>
 </template>
@@ -58,7 +62,9 @@ export default defineComponent({
 .schoolOrCompany {
   margin: 0vh;
 }
-
+.school {
+  background-color: #5f5f5f63;
+}
 .logo {
   display: flex;
   flex-direction: column;
@@ -84,6 +90,10 @@ export default defineComponent({
   .history {
     width: 100%;
     margin: 2vh 0vh;
+  }
+  .logo > img {
+    width: 20vw;
+    height: 20vw;
   }
 }
 </style>
