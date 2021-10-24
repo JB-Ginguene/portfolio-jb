@@ -28,8 +28,9 @@ export default defineComponent({
         title: "Web Devloper",
         company: "DOTNET SAS, Nantes(44)",
         technos: {
-          front: "JavaScript, jQuerry, HTML5, CSS3",
-          back: "PHP, SQL",
+          front: "JavaScript, jQuerry, HTML5, CSS3 (Materialize)",
+          back: "PHP, SQL (MySQL)",
+          tool: "MAMP, MacOS",
         },
         github: "https://github.com/JB-Ginguene/portfolio-jb",
       },
@@ -58,6 +59,7 @@ export default defineComponent({
         technos: {
           front: "HTML5, CSS3 (Bootsrap)",
           back: "PHP/Symfony, SQL",
+          tool: "WAMP",
         },
         github: "https://github.com/JB-Ginguene/sortir.com",
       },
@@ -68,6 +70,7 @@ export default defineComponent({
         technos: {
           front: "HTML5, CSS3 (Bootsrap)",
           back: "PHP/Symfony, SQL",
+          tool: "WAMP",
         },
         github: "https://github.com/JB-Ginguene/immoJB",
       },
@@ -78,6 +81,7 @@ export default defineComponent({
         technos: {
           front: "HTML5, CSS3 (Bootsrap)",
           back: "PHP/Symfony, SQL",
+          tool: "WAMP",
         },
         github: "https://github.com/JB-Ginguene/series",
       },
@@ -87,7 +91,8 @@ export default defineComponent({
         title: "Auction website",
         technos: {
           front: "HTML5, CSS3 (Bootsrap)",
-          back: "PHP/Symfony, SQL",
+          back: "JAVA EE, SQL",
+          tool: "TomCat",
         },
         github: "https://github.com/JB-Ginguene/series",
       },

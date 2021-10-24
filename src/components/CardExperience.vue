@@ -18,8 +18,30 @@
       {{ experience.description }}
     </div>
     <div class="technos">
-      <div class="tech-front">{{ experience.technos.front }}</div>
-      <div class="tech-back">{{ experience.technos.back }}</div>
+      <div class="tech tech-front" v-if="experience.technos.front">
+        <div class="tech-icon">
+          <i class="fas fa-desktop"></i>
+        </div>
+        <div class="tech-content">
+          {{ experience.technos.front }}
+        </div>
+      </div>
+      <div class="tech tech-back" v-if="experience.technos.back">
+        <div class="tech-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <div class="tech-content">
+          {{ experience.technos.back }}
+        </div>
+      </div>
+      <div class="tech tech-back" v-if="experience.technos.tool">
+        <div class="tech-icon">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <div class="tech-content">
+          {{ experience.technos.tool }}
+        </div>
+      </div>
     </div>
     <div>
       <p>
@@ -81,6 +103,18 @@ ul {
 }
 ul > li {
   padding: 0.5vh;
+}
+.technos {
+  display: flex;
+  flex-direction: column;
+}
+.tech {
+  display: flex;
+  flex-direction: row;
+}
+.tech-icon {
+  width: 3vh;
+  margin-right: 2vh;
 }
 
 .project-link {

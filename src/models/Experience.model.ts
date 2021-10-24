@@ -6,6 +6,7 @@ export type Experience = {
   technos: {
     front?: string;
     back?: string;
+    tool?: string;
   };
   github: string;
 };

@@ -25,6 +25,15 @@ export default defineComponent({
     // Datas :
     const histories = ref<History[]>([
       {
+        year: "2021 - 2022",
+        isSchool: true,
+        school: "ENI IT School",
+        diploma: "Master's degree",
+        urlLogo: "logo-eni.png",
+        detail: "Conception and development of web applications",
+        isHovering: false,
+      },
+      {
         year: "2021",
         isSchool: true,
         school: "ENI IT School",
