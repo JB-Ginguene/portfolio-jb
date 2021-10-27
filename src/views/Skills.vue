@@ -41,14 +41,16 @@
       </div>
     </div>
   </div>
+  <Footer class="page-footer" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "Skills",
-  components: {},
+  components: { Footer },
 });
 </script>
 
@@ -58,7 +60,6 @@ export default defineComponent({
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 .skill {
   margin: 2vh 0vh;
   padding: 2vh;

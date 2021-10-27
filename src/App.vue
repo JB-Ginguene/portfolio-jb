@@ -3,19 +3,9 @@
     <!-- Ma NavBar -->
     <NavBar class="page-header" />
     <!-- Affiche le contenu du routeur -->
-    <router-view v-slot="{ Component }">
-      <transition
-        mode="out-in"
-        enter-active-class="animate__animated animate__fadeIn"
-        leave-active-class="animate__animated animate__fadeIn"
-      >
-        <div class="content page-body">
-          <component :is="Component" />
-        </div>
-      </transition>
-    </router-view>
-
-    <Footer class="page-footer" />
+    <div class="content page-body">
+      <router-view> </router-view>
+    </div>
   </div>
 </template>
 
@@ -23,13 +13,11 @@
 import { defineComponent } from "vue";
 
 import NavBar from "@/components/NavBar.vue";
-import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "Home",
   components: {
     NavBar,
-    Footer,
   },
 });
 </script>
@@ -68,7 +56,7 @@ h3 {
     margin: 2vh 1vh;
   }
   .content {
-    margin: 5vh 0vh;
+    margin: 1vh 0vh 2vh 0vh;
   }
 }
 

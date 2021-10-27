@@ -9,6 +9,7 @@
       />
     </div>
   </div>
+  <Footer class="page-footer" />
 </template>
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
@@ -16,10 +17,11 @@ import { ref } from "@vue/reactivity";
 import { Experience } from "@/models/Experience.model";
 
 import CardExperience from "@/components/CardExperience.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "Experience",
-  components: { CardExperience },
+  components: { CardExperience, Footer },
   setup() {
     const experiences = ref<Experience[]>([
       {

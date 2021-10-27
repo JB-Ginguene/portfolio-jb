@@ -37,15 +37,17 @@
         </ul>
       </div>
     </div>
+    <Footer class="page-footer" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "Home",
-  components: {},
+  components: { Footer },
 
   data() {
     return {
@@ -62,7 +64,6 @@ export default defineComponent({
   methods: {
     onResize() {
       this.windowWidth = window.innerWidth;
-      console.log(this.windowWidth);
     },
   },
 });

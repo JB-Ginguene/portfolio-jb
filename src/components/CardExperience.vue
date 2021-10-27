@@ -43,13 +43,11 @@
         </div>
       </div>
     </div>
-    <div>
-      <p>
-        Github link:
-        <a class="project-link" v-bind:href="experience.github" target="_blank">
-          <i class="project-link-icon devicon-github-original"></i
-        ></a>
-      </p>
+    <div class="github">
+      <div>Github link:</div>
+      <a class="project-link" v-bind:href="experience.github" target="_blank">
+        <i class="project-link-icon devicon-github-original"></i
+      ></a>
     </div>
   </div>
 </template>
@@ -104,6 +102,10 @@ ul {
 ul > li {
   padding: 0.5vh;
 }
+.company {
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
 .technos {
   display: flex;
   flex-direction: column;
@@ -111,13 +113,18 @@ ul > li {
 .tech {
   display: flex;
   flex-direction: row;
+  margin: 0.5vh 0vh;
 }
 .tech-icon {
   width: 3vh;
   margin-right: 2vh;
 }
-
+.github {
+  display: flex;
+  align-items: center;
+}
 .project-link {
+  margin-left: 1vh;
   font-size: 4vh;
   text-decoration: none;
   color: whitesmoke;

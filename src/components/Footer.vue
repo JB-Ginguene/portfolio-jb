@@ -19,6 +19,7 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 8vh;
 }
 .social-network-logos > a {
   text-decoration: none;
@@ -35,5 +36,10 @@ footer {
 }
 .social-network:hover {
   color: #ffde59;
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 4vh;
+  }
 }
 </style>

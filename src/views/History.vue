@@ -9,6 +9,7 @@
       />
     </div>
   </div>
+  <Footer class="page-footer" />
 </template>
 
 <script lang="ts">
@@ -17,10 +18,11 @@ import { ref } from "@vue/reactivity";
 import { History } from "@/models/History.model";
 
 import CardHistory from "@/components/CardHistory.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "History",
-  components: { CardHistory },
+  components: { CardHistory, Footer },
   setup() {
     // Datas :
     const histories = ref<History[]>([
