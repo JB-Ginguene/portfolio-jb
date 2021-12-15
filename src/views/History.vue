@@ -27,7 +27,7 @@ export default defineComponent({
     // Datas :
     const histories = ref<History[]>([
       {
-        year: "2021 - 2022",
+        year: "2022",
         isSchool: true,
         school: "ENI IT School",
         diploma: "Master's degree",

@@ -8,5 +8,6 @@ export type Experience = {
     back?: string;
     tool?: string;
   };
-  github: string;
+  github?: string;
+  website?: string;
 };

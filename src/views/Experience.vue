@@ -27,14 +27,28 @@ export default defineComponent({
       {
         isHovering: false,
         isExperience: true,
-        title: "Web Devloper",
+        title: "Web Developer",
+        company: "Solocal, Rennes (35)",
+        technos: {
+          front: "JavaScript (Angular), HTML5, CSS3",
+          back: "JAVA (Spring Boot), PHP (Symfony)",
+          tool: "",
+        },
+        github: "",
+        website: "https://dotnet-sas.net/",
+      },
+      {
+        isHovering: false,
+        isExperience: true,
+        title: "Web Developer",
         company: "DOTNET SAS, Nantes(44)",
         technos: {
           front: "JavaScript, jQuerry, HTML5, CSS3 (Materialize)",
           back: "PHP, SQL (MySQL)",
           tool: "MAMP, MacOS",
         },
-        github: "https://github.com/JB-Ginguene/portfolio-jb",
+        github: "",
+        website: "https://dotnet-sas.net/",
       },
       {
         isHovering: false,
@@ -44,6 +58,7 @@ export default defineComponent({
           front: "JavaScript/Vue.js, HTML5, CSS3",
         },
         github: "https://github.com/JB-Ginguene/portfolio-jb",
+        website: "",
       },
       {
         isHovering: false,
@@ -53,6 +68,7 @@ export default defineComponent({
           front: "JavaScript/Vue.js, HTML5, CSS3 (Bootsrap)",
         },
         github: "https://github.com/JB-Ginguene/weather-app",
+        website: "",
       },
       {
         isHovering: false,
@@ -64,6 +80,7 @@ export default defineComponent({
           tool: "WAMP",
         },
         github: "https://github.com/JB-Ginguene/sortir.com",
+        website: "",
       },
       {
         isHovering: false,
@@ -75,6 +92,7 @@ export default defineComponent({
           tool: "WAMP",
         },
         github: "https://github.com/JB-Ginguene/immoJB",
+        website: "",
       },
       {
         isHovering: false,
@@ -86,6 +104,7 @@ export default defineComponent({
           tool: "WAMP",
         },
         github: "https://github.com/JB-Ginguene/series",
+        website: "",
       },
       {
         isHovering: false,
@@ -97,6 +116,7 @@ export default defineComponent({
           tool: "TomCat",
         },
         github: "https://github.com/JB-Ginguene/series",
+        website: "",
       },
     ]);
     function mouseOver(experience: Experience) {

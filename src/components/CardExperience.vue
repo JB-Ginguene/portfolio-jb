@@ -43,10 +43,16 @@
         </div>
       </div>
     </div>
-    <div class="github">
+    <div class="github" v-if="experience.github">
       <div>Github link:</div>
       <a class="project-link" v-bind:href="experience.github" target="_blank">
         <i class="project-link-icon devicon-github-original"></i
+      ></a>
+    </div>
+    <div class="github" v-if="experience.website">
+      <div>Website:</div>
+      <a class="project-link" v-bind:href="experience.website" target="_blank">
+        <i class="project-link-icon fas fa-globe"></i
       ></a>
     </div>
   </div>
