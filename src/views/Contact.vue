@@ -2,19 +2,21 @@
   <div class="contact">
     <h1>CONTACT</h1>
     <div class="container">
-      <div
-        @mouseover="displayButton"
-        @mouseleave="undisplayButton"
-        class="resume"
-      >
-        <a href="@/assets/resume/resume-jb-ginguene.pdf" download>
-          <img
-            src="@/assets/resume/resume-jb-ginguene.png"
-            alt="Resume Jean-Baptiste Ginguené"
-          />
-        </a>
-        <button class="downloadBtn">Download my resume</button>
+      <div class="resume">
+        <img
+          src="@/assets/resume/resume-jb-ginguene.png"
+          alt="Resume Jean-Baptiste Ginguené"
+        />
+        <!-- <a
+          href="http://localhost:8080/img/resume-jb-ginguene.912f91d4.png"
+          download
+        > -->
+        <button class="downloadBtn" @click="downloadFile">
+          Download my resume
+        </button>
+        <!-- </a> -->
       </div>
+
       <div class="contact-me">
         <div class="title">
           <h3>Feel free to contact me for any further information !</h3>
@@ -32,10 +34,16 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Footer from "@/components/Footer.vue";
+import pdf from "@/assets/resume/resumejbginguene.pdf";
 
 export default defineComponent({
   name: "Contact",
   components: { Footer },
+  methods: {
+    downloadFile() {
+      pdf.print();
+    },
+  },
 });
 </script>
 <style scoped>
